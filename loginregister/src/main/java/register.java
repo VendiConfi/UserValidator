@@ -42,7 +42,7 @@ public class register extends HttpServlet {
 //      out.print
     
         try {
-            Connection con1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/bpaas", "root", "shivansh");
+            Connection con1 = DriverManager.getConnection("");
             String na = request.getParameter("n");
             String eid = request.getParameter("id");
             String add = request.getParameter("add");
