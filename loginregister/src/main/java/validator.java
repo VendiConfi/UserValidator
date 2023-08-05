@@ -28,7 +28,7 @@ public class validator extends HttpServlet {
             String employeeId = request.getParameter("employee_id");
             if (employeeId != null && !employeeId.isEmpty()) {
                 // Connect to the database
-                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bpaas", "root", "shivansh");
+                Connection con = DriverManager.getConnection("");
                 
                 // Update the status to "verified" in the database
                 String updateQuery = "UPDATE users SET status = 'verified' WHERE employee_id = ?";
