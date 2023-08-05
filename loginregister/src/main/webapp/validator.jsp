@@ -22,7 +22,7 @@
 
         <%
         try {
-            Connection con1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/bpaas", "root", "shivansh");
+            Connection con1 = DriverManager.getConnection("");
             Statement st = con1.createStatement();
             String str = "select * from users";
             ResultSet rs = st.executeQuery(str);
@@ -57,7 +57,7 @@
         } finally {
             
             try {
-            	 Connection con1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/bpaas", "root", "shivansh");
+            	 Connection con1 = DriverManager.getConnection("");
                  Statement st = con1.createStatement();
                  String str = "select * from users";
                  ResultSet rs = st.executeQuery(str);
