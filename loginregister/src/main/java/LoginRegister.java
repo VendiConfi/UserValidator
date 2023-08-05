@@ -34,7 +34,7 @@ public class LoginRegister extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
 
             // Create a connection to the database
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bpaas", "root", "shivansh");
+            Connection con = DriverManager.getConnection("");
 
             String username = request.getParameter("name");
             String password = request.getParameter("password");
